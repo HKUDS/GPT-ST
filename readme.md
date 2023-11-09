@@ -1,16 +1,18 @@
 # GPT-ST: Generative Pre-Training of Spatio-Temporal Graph Neural Networks
 
-A pytorch implementation for the paper: [GPT-ST: Generative Pre-Training of Spatio-Temporal Graph Neural Networks](https://openreview.net/forum?id=nMH5cUaSj8)<br />
+A pytorch implementation for the paper: [GPT-ST: Generative Pre-Training of Spatio-Temporal Graph Neural Networks](https://arxiv.org/abs/2311.04245v1)<br />  
+
 Zhonghang Li, Lianghao Xia, Yong Xu, Chao Huang* (*Correspondence)<br />  
+
 **[Data Intelligence Lab](https://sites.google.com/view/chaoh/home)@[University of Hong Kong](https://www.hku.hk/)**, [South China University of Technology](https://www.scut.edu.cn/en/), PAZHOU LAB  
 
 This repository hosts the code, data, and model weights of **GPT-ST**. Furthermore, it also includes the code for the baselines used in the paper.
 
 ## Introduction
 
-<div style="text-align: justify">
-GPT-ST is a generative pre-training framework for improving the spatio-temporal prediction performance of downstream baselines. The framework is built upon two key designs: (i) We propose a spatio-temporal mask autoencoder as a pre-training model for learning spatio-temporal dependencies. The model incorporates customized parameter learners and hierarchical spatial pattern encoding networks, which specifically designed to capture spatio-temporal customized representations and intra- and inter-cluster region semantic relationships. (ii) We introduce an adaptive mask strategy as part of the pre-training mechanism. This strategy guides the mask autoencoder in learning robust spatio-temporal representations and facilitates the modeling of different relationships, ranging from intra-cluster to inter-cluster, in an easy-to-hard training manner.  
-</div>
+<p style="text-align: justify">
+GPT-ST is a generative pre-training framework for improving the spatio-temporal prediction performance of downstream models. The framework is built upon two key designs: (i) We propose a spatio-temporal mask autoencoder as a pre-training model for learning spatio-temporal dependencies. The model incorporates customized parameter learners and hierarchical spatial pattern encoding networks, which specifically designed to capture spatio-temporal customized representations and intra- and inter-cluster region semantic relationships. (ii) We introduce an adaptive mask strategy as part of the pre-training mechanism. This strategy guides the mask autoencoder in learning robust spatio-temporal representations and facilitates the modeling of different relationships, ranging from intra-cluster to inter-cluster, in an easy-to-hard training manner.  
+</p>
 
 ![The detailed framework of the proposed GPT-ST.](https://github.com/LZH-YS1998/GPT-ST_img/blob/main/fig3.png)
 
