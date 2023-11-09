@@ -7,7 +7,11 @@ Zhonghang Li, Lianghao Xia, Yong Xu, Chao Huang* (*Correspondence)<br />
 This repository hosts the code, data, and model weights of **GPT-ST**. Furthermore, it also includes the code for the baselines used in the paper.
 
 ## Introduction
+
+<div style="text-align: justify">
 GPT-ST is a generative pre-training framework for improving the spatio-temporal prediction performance of downstream models. The framework is built upon two key designs: (i) We propose a spatio-temporal mask autoencoder as a pre-training model for learning spatio-temporal dependencies. The model incorporates customized parameter learners and hierarchical spatial pattern encoding networks, which specifically designed to capture spatio-temporal customized representations and intra- and inter-cluster region semantic relationships. (ii) We introduce an adaptive mask strategy as part of the pre-training mechanism. This strategy guides the mask autoencoder in learning robust spatio-temporal representations and facilitates the modeling of different relationships, ranging from intra-cluster to inter-cluster, in an easy-to-hard training manner.  
+</div>
+
 ![The detailed framework of the proposed GPT-ST.](https://github.com/LZH-YS1998/GPT-ST_img/blob/main/img/fig3.png)
 
 
@@ -37,10 +41,13 @@ Or you can install the required environment, which can be done by running the fo
 ```
 # cteate new environmrnt
 conda create -n GPT-ST python=3.9.12
+
 # activate environmrnt
 conda activate GPT-ST
+
 # Torch with CUDA 11.1
 pip install torch==1.9.1+cu111 torchvision==0.10.1+cu111 torchaudio==0.9.1 -f https://download.pytorch.org/whl/torch_stable.html
+
 # Install required libraries
 pip install -r requirements.txt
 ```
@@ -68,7 +75,7 @@ python Run.py -dataset NYC_BIKE -mode pretrain
 
 * Parameter setting instructions. The parameter settings consist of two parts: the pre-training model and the baseline model. To avoid any confusion arising from potential overlapping parameter names, we employ a hyphen (-) to specify the parameters of GPT-ST and use a double hyphen (--) to specify the parameters of the baseline model. Here is an example:
 ```
-# 将STFGNN的first_layer_embedding_size和out_layer_dim设置为32
+# Set first_layer_embedding_size and out_layer_dim to 32 in STFGNN
 python Run.py -model STFGNN -mode eval -dataset PEMS08 --first_layer_embedding_size 32 --out_layer_dim 32
 ```
 
