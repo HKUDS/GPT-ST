@@ -9,10 +9,10 @@ This repository hosts the code, data, and model weights of **GPT-ST**. Furthermo
 ## Introduction
 
 <div style="text-align: justify">
-GPT-ST is a generative pre-training framework for improving the spatio-temporal prediction performance of downstream models. The framework is built upon two key designs: (i) We propose a spatio-temporal mask autoencoder as a pre-training model for learning spatio-temporal dependencies. The model incorporates customized parameter learners and hierarchical spatial pattern encoding networks, which specifically designed to capture spatio-temporal customized representations and intra- and inter-cluster region semantic relationships. (ii) We introduce an adaptive mask strategy as part of the pre-training mechanism. This strategy guides the mask autoencoder in learning robust spatio-temporal representations and facilitates the modeling of different relationships, ranging from intra-cluster to inter-cluster, in an easy-to-hard training manner.  
+GPT-ST is a generative pre-training framework for improving the spatio-temporal prediction performance of downstream baselines. The framework is built upon two key designs: (i) We propose a spatio-temporal mask autoencoder as a pre-training model for learning spatio-temporal dependencies. The model incorporates customized parameter learners and hierarchical spatial pattern encoding networks, which specifically designed to capture spatio-temporal customized representations and intra- and inter-cluster region semantic relationships. (ii) We introduce an adaptive mask strategy as part of the pre-training mechanism. This strategy guides the mask autoencoder in learning robust spatio-temporal representations and facilitates the modeling of different relationships, ranging from intra-cluster to inter-cluster, in an easy-to-hard training manner.  
 </div>
 
-![The detailed framework of the proposed GPT-ST.](https://github.com/LZH-YS1998/GPT-ST_img/blob/main/img/fig3.png)
+![The detailed framework of the proposed GPT-ST.](https://github.com/LZH-YS1998/GPT-ST_img/blob/main/fig3.png)
 
 
 ## Code structure
