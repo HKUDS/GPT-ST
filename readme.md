@@ -19,7 +19,7 @@ GPT-ST is a generative pre-training framework for improving the spatio-temporal 
 
 ## Code structure
 * **conf**: This folder includes parameter settings for GPT-ST (`GPTST_pretrain`) as well as all other baseline models.
-* data: The documentation encompasses all the datasets utilized in our work, alongside prefabricated files and the corresponding file generation codes necessary for certain baselines.
+* **data**: The documentation encompasses all the datasets utilized in our work, alongside prefabricated files and the corresponding file generation codes necessary for certain baselines.
 * **lib**: Including a series of initialization methods for data processing, as follows:
 	* `Params_xxx.py`: To configure the parameters for GPT-ST and the baseline models。
 	* `TrainInits.py`: Training initialization, including settings of optimizer, device, random seed, etc.
