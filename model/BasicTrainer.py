@@ -227,7 +227,7 @@ class Trainer(object):
                     y_true.append(label*mask)
                     y_pred.append(output*mask)
                 else:
-                    output, _, mask, _, _ = model(data, label)
+                    output, _, mask, _, _ = model(data, label=None)
                     label = target[..., :args.output_dim]
                     y_true.append(label)
                     y_pred.append(output)
