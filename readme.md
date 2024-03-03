@@ -86,12 +86,12 @@ python Run.py -model STFGNN -mode eval -dataset PEMS08 --first_layer_embedding_s
 ## Citation
 ```
 @inproceedings{
-li2023generative,
-title={Generative Pre-Training of Spatio-Temporal Graph Neural Networks},
+li2023gptst,
 author={Zhonghang Li and Lianghao Xia and Yong Xu and Chao Huang},
-booktitle={Thirty-seventh Conference on Neural Information Processing Systems},
-year={2023},
-url={https://openreview.net/forum?id=nMH5cUaSj8}
+title = {GPT-ST: Generative Pre-Training of Spatio-Temporal Graph Neural Networks},
+booktitle = {Advances in Neural Information Processing Systems},
+pages = {70229-70246},
+year={2023}
 }
 ```
 
