@@ -177,7 +177,7 @@ class Trainer(object):
             if best_state == True:
                 self.logger.info('*********************************Current best model saved!')
                 best_model = copy.deepcopy(self.model.state_dict())
-                best_model_test = self.model
+                best_model_test = copy.deepcopy(self.model)
 
         training_time = time.time() - start_time
         self.logger.info("Total training time: {:.4f}min, best loss: {:.6f}".format((training_time / 60), best_loss))
