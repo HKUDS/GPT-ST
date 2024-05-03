@@ -23,7 +23,7 @@ def time_add(data, week_start, interval=5, weekday_only=False, holiday_list=None
             week_init = week_init + 1
         if week_init > week_max:
             week_init = 1
-        if day_init < 6:
+        if week_init < 6:
             holiday_init = 1
         else:
             holiday_init = 2
